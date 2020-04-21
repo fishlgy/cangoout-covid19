@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Can I go out</string>
+    <string name="rationale_fine_location">To proceed, please allow location in the following prompt.</string>
+    <string name="dialog_button_ok">OK</string>
+</resources>
