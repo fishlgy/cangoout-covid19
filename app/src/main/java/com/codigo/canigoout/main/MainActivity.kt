@@ -81,12 +81,7 @@ class MainActivity : AppCompatActivity(), EasyPermissions.PermissionCallbacks {
             outcome ->
             when(outcome) {
                 is Outcome.Success -> {
-                    if(outcome.data) {
-                        inputLayoutNric.isErrorEnabled = false
-                        inputLayoutNric.errorIconDrawable = null
-                        LocationActivity.start(this)
-                        finish()
-                    }
+                    etNric.setText(outcome.data)
                 }
             }
         })

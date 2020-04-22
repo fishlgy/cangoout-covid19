@@ -79,6 +79,7 @@ class LocationActivity : AppCompatActivity() {
         tvVersion.text = BuildConfig.VERSION_NAME + " (" + BuildConfig.VERSION_CODE + ")"
 
         tvBack.setOnClickListener {
+            player.stop()
             viewModel.goBack()
         }
 

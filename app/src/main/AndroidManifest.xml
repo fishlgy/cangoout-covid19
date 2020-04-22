@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".main.MainActivity"
+            android:name=".splash.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -22,6 +22,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="keyboard"
+            android:screenOrientation="portrait"/>
 
         <activity android:name=".location.LocationActivity"
             android:theme="@style/AppTheme.NoActionBar"

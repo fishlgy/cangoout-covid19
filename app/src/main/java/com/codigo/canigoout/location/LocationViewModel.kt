@@ -33,7 +33,6 @@ class LocationViewModel(
     }
 
     fun goBack() {
-        localRepository.clearNric()
         backOutcome.postValue(Outcome.success(true))
     }
 
